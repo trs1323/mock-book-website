@@ -17,7 +17,7 @@ body {
     color: black;
     font-size: 1.3rem; }
   .header a:hover {
-    transition-duration: 1s;
+    transition: all 1s ease-out;
     font-size: 1.5rem;
     color: #292929; }
 
@@ -81,17 +81,18 @@ body {
       margin-left: -4px;
       border-radius: 0 5px 5px 0;
       text-transform: uppercase;
-      background: #6cfd67; }
+      background: #49ab46; }
     .email-container .email input[type=text] {
       border: 0;
       border-radius: 5px 0 0 5px; }
 
 .book-one {
   display: flex;
-  height: 45vh;
+  height: 40vh;
   justify-content: center;
   align-content: center;
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 1rem; }
   .book-one .book-one-img {
     background: #dfdfdf;
     background-image: url("/dist/img/book-one.png");
@@ -100,10 +101,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat; }
   .book-one .book-one-text {
-    background: #449b3f;
-    background: -moz-linear-gradient(-45deg, #327530 0%, #449b3f 50%, #287525 100%);
-    background: -webkit-linear-gradient(-45deg, #327530 0%, #449b3f 50%, #287525 100%);
-    background: linear-gradient(135deg, #327530 0%, #449b3f 50%, #287525 100%);
+    background: #56b853;
+    background: -moz-linear-gradient(-45deg, #327530 0%, #56b853 50%, #327530 100%);
+    background: -webkit-linear-gradient(-45deg, #327530 0%, #56b853 50%, #327530 100%);
+    background: linear-gradient(135deg, #327530 0%, #56b853 50%, #327530 100%);
     color: white;
     width: 80vw;
     font-size: 1.3rem;
@@ -111,6 +112,38 @@ body {
     .book-one .book-one-text h2 {
       text-align: center; }
     .book-one .book-one-text button {
+      border-radius: 5px;
+      background: #fff;
+      font-weight: 400;
+      border: none;
+      padding: 10px;
+      text-transform: uppercase; }
+
+.book-two {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-content: center;
+  text-align: left; }
+  .book-two .book-two-img {
+    background: #dfdfdf;
+    background-image: url("/dist/img/book-two.png");
+    width: 20vw;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .book-two .book-two-text {
+    background: #56b853;
+    background: -moz-linear-gradient(-45deg, #327530 0%, #56b853 50%, #327530 100%);
+    background: -webkit-linear-gradient(-45deg, #327530 0%, #56b853 50%, #327530 100%);
+    background: linear-gradient(135deg, #327530 0%, #56b853 50%, #327530 100%);
+    color: white;
+    width: 80vw;
+    font-size: 1.3rem;
+    padding: 1rem 1rem 0 1rem; }
+    .book-two .book-two-text h2 {
+      text-align: center; }
+    .book-two .book-two-text button {
       border-radius: 5px;
       background: #fff;
       font-weight: 400;

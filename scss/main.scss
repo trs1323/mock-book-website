@@ -1,3 +1,5 @@
+@import 'config';
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
@@ -26,7 +28,7 @@ body {
     }
 
     a:hover {
-        transition-duration: 1s;
+        transition: all 1s ease-out;
         font-size: 1.5rem;
         color: rgb(41, 41, 41)
     }
@@ -98,7 +100,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    background: rgb(50, 117, 48);
+    background: $primary-color;
     margin-bottom: 1rem;
     color: #fff;
 
@@ -118,7 +120,7 @@ body {
             margin-left: -4px;
             border-radius: 0 5px 5px 0;
             text-transform: uppercase;
-            background: rgb(108, 253, 103);
+            background: lighten($primary-color, 15%);
         }
 
         input[type=text] {
@@ -131,15 +133,15 @@ body {
 //book one
 .book-one {
     display: flex;
-    height: 45vh;
+    height: 40vh;
     justify-content: center;
     align-content: center;
     text-align: right;
+    margin-bottom: 1rem;
 
     .book-one-img {
         background: rgb(223, 223, 223);
         background-image: url('/dist/img/book-one.png');
-
         width: 20vw;
         height: auto;
         background-size: contain;
@@ -147,10 +149,52 @@ body {
     }
 
     .book-one-text {
-        background: rgb(68, 155, 63); //rgb(50, 117, 48)
-        background: -moz-linear-gradient(-45deg, rgb(50, 117, 48) 0%, rgb(68, 155, 63) 50%, rgb(40, 117, 37) 100%);
-        background: -webkit-linear-gradient(-45deg, rgb(50, 117, 48) 0%, rgb(68, 155, 63) 50%, rgb(40, 117, 37) 100%);
-        background: linear-gradient(135deg, rgb(50, 117, 48) 0%, rgb(68, 155, 63) 50%, rgb(40, 117, 37) 100%);
+        background: lighten($primary-color, 20%); //rgb(50, 117, 48)
+        background: -moz-linear-gradient(-45deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        background: -webkit-linear-gradient(-45deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        background: linear-gradient(135deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        color: white;
+        width: 80vw;
+        font-size: 1.3rem;
+        padding: 1rem 1rem 0 1rem;
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            border-radius: 5px;
+            background: #fff;
+            font-weight: 400;
+            border: none;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//book two
+.book-two {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+
+    .book-two-img {
+        background: rgb(223, 223, 223);
+        background-image: url('/dist/img/book-two.png');
+        width: 20vw;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .book-two-text {
+        background: lighten($primary-color, 20%); //rgb(50, 117, 48)
+        background: -moz-linear-gradient(-45deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        background: -webkit-linear-gradient(-45deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        background: linear-gradient(135deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
         color: white;
         width: 80vw;
         font-size: 1.3rem;
