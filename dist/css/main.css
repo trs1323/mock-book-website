@@ -110,7 +110,8 @@ body {
     font-size: 1.3rem;
     padding: 1rem 1rem 0 1rem; }
     .book-one .book-one-text h2 {
-      text-align: center; }
+      text-align: center;
+      text-decoration: underline; }
     .book-one .book-one-text button {
       border-radius: 5px;
       background: #fff;
@@ -124,7 +125,8 @@ body {
   height: 40vh;
   justify-content: center;
   align-content: center;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 1rem; }
   .book-two .book-two-img {
     background: #dfdfdf;
     background-image: url("/dist/img/book-two.png");
@@ -142,7 +144,8 @@ body {
     font-size: 1.3rem;
     padding: 1rem 1rem 0 1rem; }
     .book-two .book-two-text h2 {
-      text-align: center; }
+      text-align: center;
+      text-decoration: underline; }
     .book-two .book-two-text button {
       border-radius: 5px;
       background: #fff;
@@ -150,3 +153,55 @@ body {
       border: none;
       padding: 10px;
       text-transform: uppercase; }
+
+.coming-soon-container {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 1rem; }
+  .coming-soon-container .coming-soon-text {
+    padding-top: 4rem;
+    width: 20vw;
+    background: #dfdfdf;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: underline; }
+  .coming-soon-container .coming-soon-img {
+    background: #56b853;
+    background: -moz-linear-gradient(-45deg, #327530 0%, #56b853 50%, #327530 100%);
+    background: -webkit-linear-gradient(-45deg, #327530 0%, #56b853 50%, #327530 100%);
+    background: linear-gradient(135deg, #327530 0%, #56b853 50%, #327530 100%);
+    font-size: 1.3rem;
+    width: 80vw;
+    color: #fff; }
+    .coming-soon-container .coming-soon-img i {
+      padding-top: 2rem;
+      padding-right: 2rem; }
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background: #dfdfdf; }
+  .footer a {
+    text-decoration: none;
+    color: black;
+    padding-top: 1rem; }
+
+.about-container {
+  display: flex;
+  height: 100vh;
+  width: 90vw;
+  justify-content: center;
+  align-content: center; }
+  .about-container .about-img {
+    height: 30vh;
+    width: 30vw;
+    background-image: url("/dist/img/about-pic.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; }

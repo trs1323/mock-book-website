@@ -160,6 +160,7 @@ body {
 
         h2 {
             text-align: center;
+            text-decoration: underline;
         }
 
         button {
@@ -180,6 +181,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: left;
+    margin-bottom: 1rem;
 
     .book-two-img {
         background: rgb(223, 223, 223);
@@ -202,6 +204,7 @@ body {
 
         h2 {
             text-align: center;
+            text-decoration: underline;
         }
 
         button {
@@ -212,5 +215,75 @@ body {
             padding: 10px;
             text-transform: uppercase;
         }
+    }
+}
+
+//coming soon
+.coming-soon-container {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .coming-soon-text {
+        padding-top: 4rem;
+        width: 20vw;
+        background: rgb(223, 223, 223);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .coming-soon-img {
+        background: lighten($primary-color, 20%); //rgb(50, 117, 48)
+        background: -moz-linear-gradient(-45deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        background: -webkit-linear-gradient(-45deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        background: linear-gradient(135deg, $primary-color 0%, lighten($primary-color, 20%) 50%, $primary-color 100%);
+        font-size: 1.3rem;
+        width: 80vw;
+        color: #fff;
+
+        i {
+            padding-top: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+//footer
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background: rgb(223, 223, 223);
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding-top: 1rem;
+    }
+}
+
+
+//ABOUT
+
+.about-container {
+    display: flex;
+    height: 100vh;
+    width: 90vw;
+    justify-content: center;
+    align-content: center;
+
+    .about-img {
+        height: 30vh;
+        width: 30vw;
+        background-image: url('/dist/img/about-pic.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
